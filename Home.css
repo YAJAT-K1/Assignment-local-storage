@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* div{
+    border: 1px solid red;
+} */
+.main{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+.left{
+    width: 20%;
+    padding: 2%;
+    text-align: center;
+    background: linear-gradient(to bottom right,black,grey);
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    font-family: Georgia;
+    color: whitesmoke;
+    
+}
+.links{
+    margin-top: 10%;
+    padding: 4% 0 4% 0;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.15) ;
+    background-color: slategray;
+}
+.links:hover{
+    background: -webkit-linear-gradient(right, transparent 40%, gray 60%);
+}
+.right{
+    min-height: 100vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 60% 60% 60%;
+    padding: 1% 2%;
+    gap: 3%;
+}
+.product{
+    height: 100%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 60px;
+    padding: 2%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+}
+.product img{
+    height: 95%;
+    width: 95%;
+    border-radius: 60px;
+    margin-top:5px;
+}
+.product div{
+    height: 60%;
+    width: 100%;
+    text-align: center;
+}
+.product .rate{
+    text-align: left;
+    height: max-content;
+    font-size: x-large;
+    padding-left: 3%;
+}
+.product .description{
+    text-align: left;
+    height: max-content;
+    word-wrap: normal;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-left: 3%;
+}
+
+.product .delete{
+    text-align: right;
+    height: max-content;
+    padding-right: 8%;
+    margin-top: -6%;
+    box-sizing: border-box;
+}
+.product .addproduct{
+    height: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+.product .addproduct button{
+    padding: 8% 15%;
+    border-radius: 90px;
+    border: none;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+}
+.product .addproduct button:hover{
+    background: -webkit-linear-gradient(bottom right, transparent 40%, gray 60%);
+    color: darkslategray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+}
+.overlay-form{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.overlay-form .overlayBackground{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    position: relative;
+    opacity: 60%;
+}
+.overlay-form form{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40%;
+    width: 30%;
+    border-radius: 5%;
+}
+.overlay-form form{
+    padding: 1%;
+}
